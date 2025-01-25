@@ -1,3 +1,4 @@
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -38,7 +39,7 @@ public class AccountTest {
                 { "Тимоти   Шаламе", false },           // Много пробелов
         });
     }
-
+    @DisplayName("Проверка имя и фамилия")
     @Test
     public void nameValidityTest() {
         Account account = new Account(name);
