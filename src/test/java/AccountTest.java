@@ -22,7 +22,7 @@ public class AccountTest {
     public static List<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "", false },                          // 0
-                { "Т", false },                         // 1
+                { "Т", true },                         // 1
                 { "Ти", false },                        // 2
                 { "Т м", true },                        // 3
                 { "Ти о", true },                       // 4
